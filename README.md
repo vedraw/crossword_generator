@@ -1,21 +1,21 @@
-# 🔤 Crossword Name Generator
+# Crossword Name Generator
 
 A fun web app to generate all possible crossword-style arrangements from a list of names! Supports interactive preview, regeneration, and image download of the grid.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🧠 Generates all possible crossword layouts with horizontal/vertical placement
-- ❌ Avoids adjacent non-overlapping words for cleaner puzzles
-- 🔁 Regenerate to cycle through all valid layouts
-- 📸 Download crossword grid as an image (PNG)
-- ⚡ Fast Node.js + Express backend
-- 🖥️ Simple HTML + JavaScript frontend
+- Generates all possible crossword layouts with horizontal/vertical placement
+- Avoids adjacent non-overlapping words for cleaner puzzles
+- Regenerate to cycle through all valid layouts
+- Download crossword grid as an image (PNG)
+- Fast Node.js + Express backend
+- Simple HTML + JavaScript frontend
 
 ---
 
-## 📦 Tech Stack
+## Tech Stack
 
 - **Frontend**: HTML, CSS, Vanilla JS, `html2canvas`
 - **Backend**: Node.js, Express
@@ -23,7 +23,7 @@ A fun web app to generate all possible crossword-style arrangements from a list 
 
 ---
 
-## 💡 Usage
+## Usage
 
 1. Clone this repo:
 
