@@ -62,9 +62,13 @@
       display: grid;
       gap: 2px;
       padding: 16px;
-      background: #ccc;
+      background: white;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    #crossword:empty {
+      display: none;
     }
 
     .cell {
@@ -92,6 +96,8 @@
     <button onclick="download()">Download</button>
   </div>
 
+  <p id="layout-count" style="font-weight: bold; margin-bottom: 16px;"></p>
+
   <div id="crossword" class="grid"></div>
 
   <script>
@@ -105,11 +111,17 @@
         body: JSON.stringify({ names })
       });
       const data = await res.json();
-      if (!Array.isArray(data) || !data.length) {
-        alert("No valid layouts found.");
+      
+      if (data.error) {
+        alert(data.error);
+        document.getElementById('layout-count').textContent = '';
+        document.getElementById('crossword').innerHTML = '';
         return;
       }
-      layouts = data;
+      
+      layouts = data.layouts;
+      document.getElementById('layout-count').textContent = `Generated Layouts: ${data.count}`;
+
       index = 0;
       render();
     }
