@@ -1,4 +1,4 @@
-# Crossword Name Generator
+# Family Names Crossword Generator
 
 A fun web app to generate all possible crossword-style arrangements from a list of names! Supports interactive preview, regeneration, and image download of the grid.
 
@@ -49,3 +49,11 @@ node server.js
 ```bash
 http://localhost:3000
 ```
+
+
+Enter names like:
+ALLEN, ELEANOR, LENA, LEON
+
+And get crossword-like overlapping grids, with navigation and image export!
+
+
