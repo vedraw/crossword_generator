@@ -50,10 +50,11 @@ node server.js
 http://localhost:3000
 ```
 
+--- 
 
-Enter names like:
-ALLEN, ELEANOR, LENA, LEON
+Enter names:
+For eg. ALLEN, ELEANOR, LENA, LEON
 
 And get crossword-like overlapping grids, with navigation and image export!
-
+![Crossword Screenshot](Screenshot 2025-07-07 at 12.20.45 AM.png)
 
