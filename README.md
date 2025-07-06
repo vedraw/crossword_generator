@@ -56,6 +56,6 @@ Enter names:
 For eg. ALLEN, ELEANOR, LENA, LEON
 
 And get crossword-like overlapping grids, with navigation and image export!
-<img src="example" alt="Crossword Screenshot" width="600"/>
+<img src="example.png" alt="Crossword Screenshot" width="600"/>
 
 --- 
