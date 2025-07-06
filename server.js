@@ -128,15 +128,23 @@ function generateCrosswords(words) {
 app.post('/generate', (req, res) => {
   const { names } = req.body;
   const cleanNames = names.map(n => n.trim().toUpperCase()).filter(n => n);
+
   console.log("Received names:", cleanNames);
 
   if (cleanNames.length < 2) {
     return res.status(400).json({ error: "Enter at least 2 names." });
   }
 
-  const result = generateCrosswords(cleanNames);
-  console.log("Generated layouts:", result.length);
-  res.json(result);
+  const layouts = generateCrosswords(cleanNames);
+  console.log("Generated layouts:", layouts.length);
+
+  if (layouts.length === 0) {
+    return res.status(200).json({
+      error: "No valid overlap between names. Try different or more overlapping names."
+    });
+  }
+
+  res.json({ layouts, count: layouts.length });
 });
 
 app.listen(PORT, () => {
