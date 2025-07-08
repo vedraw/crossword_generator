@@ -19,7 +19,7 @@ A fun web app to generate all possible crossword-style arrangements from a list 
 
 - **Frontend**: HTML, CSS, Vanilla JS, `html2canvas`
 - **Backend**: Node.js, Express
-- **Misc**: CORS, Grid-based UI, Flexbox layout
+<!--- - **Misc**: CORS, Grid-based UI, Flexbox layout --->
 
 ---
 
@@ -53,7 +53,7 @@ http://localhost:3000
 --- 
 
 Enter names:
-For eg. ALLEN, ELEANOR, LENA, LEON
+For eg. Allen, Eleanor, Lena, Leon
 
 And get crossword-like overlapping grids, with navigation and image export!
 
